@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Book Darshan | Darshan Connect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h1>🛕 Darshan Connect</h1>
+
+            <div>
+
+                <a href="index.html">Home</a>
+
+                <a href="index.html#temples">Temples</a>
+
+                <a href="index.html#sessions">Sessions</a>
+
+                <a href="index.html#bookings">My Bookings</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="booking-page">
+
+        <h2>Book Your Darshan</h2>
+
+        <div id="selectedSession">
+
+            <p>Loading session details...</p>
+
+        </div>
+
+
+        <form id="bookingForm">
+
+            <label for="visitorName">
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="visitorName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="visitorContact">
+                Contact Number
+            </label>
+
+            <input
+                type="tel"
+                id="visitorContact"
+                placeholder="Enter contact number"
+                required
+            >
+
+
+            <label for="visitorCount">
+                Number of Visitors
+            </label>
+
+            <input
+                type="number"
+                id="visitorCount"
+                min="1"
+                required
+            >
+
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+
+        <p id="bookingMessage"></p>
+
+    </main>
+
+
+    <script src="booking.js"></script>
+
+</body>
+
+</html>
